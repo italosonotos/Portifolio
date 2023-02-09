@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+body {
+    margin: 0;
+    border: 0;
+    background-color: #121212;
+    color: white;
+    font-family: "Inter", sans-serif;
+    letter-spacing: 1px;
+}
+
+h1,
+h2,
+p {
+margin: 0;
+}
+h1#inome{
+    color: #12d6e1;
+}
+.linkedin a{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    padding-top: 15px;
+    position: relative;
+    width: 10%;
+    height: 40px;
+    border: 3px solid #12d6e1;
+    border-radius: 7px;
+    text-decoration: none;
+
+}
+.github a{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    position: relative;
+    margin-top: -60px;
+    left: 120px;
+    padding-top: 15px;
+    width: 10%;
+    height: 40px;
+    border: 3px solid #12d6e1;
+    border-radius: 7px;
+
+}
+.imglinkd {
+    max-width:15px;
+    max-height:20px;
+    width: auto;
+    height: auto;
+    
+}
+.imggit {
+    max-width:20px;
+    max-height:20px;
+    width: auto;
+    height: auto;
+}
+.linkedin a:hover{
+    background-color: rgba(255, 255, 255, 0.377);
+}
+.github a:hover{
+    background-color: rgba(255, 255, 255, 0.377);
+}
+
+main {
+    color: #c4c4c4;
+}
+  
+footer {
+    padding: 2rem 0;
+    text-align: center;
+    color: #12d6e1;
+    font-weight: bold;
+    transition: .4s;
+}
+footer p {
+    display: inline-block;
+}
+  
+footer:hover {
+    color: rgba(101, 24, 180, 1)
+}
+h1 {
+    text-transform: uppercase;
+}
+  
+h2 {
+    font-size: 1rem;
+}
+
+  
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+nav {
+    padding: 0 15%;
+    display: flex;
+    align-items: center;
+    background-color: #151515;
+    border-bottom: 2px solid #272727;
+    font-weight: bold;
+    height: 80px;
+    transition: 0.3s;
+}
+nav.fixed {
+  box-shadow: 0 4px 4px rgba(0,0,0,.3);
+}
+
+nav ul {
+  display: flex;
+  justify-content: end;
+}
+
+nav ul li {
+  list-style: none;
+  margin: 10px 30px;
+}
+
+nav ul li::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid #12d6e1;
+  margin-top: 5px;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+nav.fixed {
+    box-shadow: 0 4px 4px rgba(0,0,0,.3);
+  }
+  
+nav ul {
+    display: flex;
+    justify-content: end;
+}
+  
+nav ul li {
+    list-style: none;
+    margin: 10px 30px;
+}
+  
+nav ul li::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid #12d6e1;
+    margin-top: 5px;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+nav ul li:hover::after {
+    transform: scaleX(1);
+}
+  
+nav p {
+    padding: 10px;
+    font-size: 1.3rem;
+    width: 100%;
+}
+
+  
+nav p a {
+    color: #12d6e1;
+    transition: 0.3s;
+}
+.principal,
+.sobre-mim
+{
+  padding: 6.5% 15%;
+  min-height: 35vh;
+}
+
+
+section h1 {
+  margin-bottom: 2rem;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+  
