@@ -4,6 +4,11 @@
     #burguer{
         display: none;
     }
+    nav p:hover{
+       color: rgba(128, 255, 0, 0.785);
+       cursor:pointer;
+      
+    }
     .linkedin a{
         display: block;
         text-align: center;
@@ -31,8 +36,8 @@
         border-radius: 7px;
     
     }
-    menu{
-        display: flex;
+    menu#lista{
+        display:flex;
     }
     header {
         position: fixed;
@@ -72,6 +77,8 @@
     }
     
     footer:hover {
-        color: rgba(101, 24, 180, 1)
+        color:rgba(128, 255, 0, 0.785)
+        
+        
     }
 }
