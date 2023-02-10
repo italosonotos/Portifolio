@@ -1,0 +1,145 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    border: 0;
+    background-color: #121212;
+    color: rgb(255, 250, 250);
+    font-family: "Inter", sans-serif;
+    letter-spacing: 1px;
+}
+header{
+    padding: 10px;
+    width: 100%;
+    z-index: 100;
+}
+/* header { da uma olhada no final
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+}
+*/
+menu{
+    display: none;
+}
+
+menu >h1{
+    list-style: none;
+}
+nav ul li {
+    list-style: none;
+    margin: 10px -85px;
+}
+menu > ul > li > a{
+    
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    border-radius: 10px;
+    
+}
+
+i#burguer{
+    background-color: rgb(80, 80, 80);
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+}
+
+nav p { /*Logo IS*/
+    padding: -10px;
+    font-size: 1.3rem;
+    width: 100%;
+    color: #12d6e1;
+}
+.linkedin a{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    padding-top: 15px;
+    position: relative;
+    width: 22%;
+    height: 50px;
+    border: 3px solid #12d6e1;
+    border-radius: 7px;
+    text-decoration: none;
+
+}
+.github a{
+    display: block;
+    text-align: center;
+    font-size: 1em;
+    position: relative;
+    margin-top: -67px;
+    left: 120px;
+    padding-top: 15px;
+    width: 22%;
+    height: 50px;
+    border: 3px solid #12d6e1;
+    border-radius: 7px;
+
+}
+.imglinkd {
+    max-width:15px;
+    max-height:20px;
+    width: auto;
+    height: auto;
+    
+}
+.imggit {
+    max-width:20px;
+    max-height:20px;
+    width: auto;
+    height: auto;
+}
+h1,
+h2,
+p {
+margin: 0;
+}
+h1 {
+    text-transform: uppercase;
+}
+  
+h2 {
+    font-size: 1rem;
+}
+h1#inome{
+    color: #12d6e1;
+}
+h1 {
+    text-transform: uppercase;
+}
+  
+h2 {
+    font-size: 1rem;
+}
+.principal,
+.sobre-mim
+{
+  padding: 6.5% 15%;
+  min-height: 35vh;
+}
+section h1 {
+    margin-bottom: .5rem;
+  }
+  
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+footer {
+    padding: 2rem 0;
+    text-align: center;
+    color: #12d6e1;
+    font-weight: bold;
+    transition: .4s;
+}
+footer p {
+    display: inline-block;
+}
+
