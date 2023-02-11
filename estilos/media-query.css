@@ -75,9 +75,14 @@
         transform: scaleX(0);
         transition: transform 0.3s ease;
     }
-    
+    .container .dinamico{
+        margin-left: 300px;
+        font-size: 50px;
+       
+        
+    }
     footer:hover {
-        color:rgba(128, 255, 0, 0.785)
+        color:rgba(128, 255, 0, 0.785);
         
         
     }
