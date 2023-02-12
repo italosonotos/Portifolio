@@ -67,9 +67,9 @@ nav p { /*Logo IS*/
     padding-top: 15px;
     position: relative;
     width: 22%;
-    height: 5px;
+    height: 50px;
     border: 5px solid #12d6e1;
-    border-radius: 7px;
+    border-radius: 105px;
     text-decoration: none;
 
 }
@@ -78,18 +78,18 @@ nav p { /*Logo IS*/
     text-align: center;
     font-size: 1em;
     position: relative;
-    margin-top: -67px;
+    margin-top: -75px;
     left: 120px;
     padding-top: 15px;
     width: 22%;
     height: 50px;
     border: 5px solid #12d6e1;
-    border-radius: 7px;
+    border-radius: 105px;
 
 }
 .imglinkd {
     max-width:15px;
-    max-height:20px;
+    max-height:25px;
     width: auto;
     height: auto;
     
@@ -101,7 +101,16 @@ nav p { /*Logo IS*/
     height: auto;
     align-items: center;
 }
+.ihablidades img{
 
+
+    display: flex;
+    max-width: 100px;
+    max-height: 100px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    
+}
 h1,
 h2,
 p {
