@@ -10,7 +10,7 @@
       
     }
     .linkedin a{
-        display: flex;
+       
         align-items: center;
         text-align: center;
         font-size: 1em;
@@ -42,7 +42,7 @@
         display: inline-block;
         position: absolute;
         left: 900px;
-        top: 200px;
+        top: 300px;
         width: 200px;
         animation: float  3s ease-in-out infinite;
     }
