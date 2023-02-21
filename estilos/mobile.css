@@ -167,10 +167,13 @@ a {
     
     width: 1000px;
     position: relative;
+    margin-left: 150px;
     display: block;
     justify-content: space-between;
 }
-
+.projetos h1{
+    margin-left: -150px;
+}
 .container .card{
     position: relative;
     cursor: pointer;

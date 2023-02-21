@@ -108,23 +108,40 @@
     nav ul li #habi{
         margin-top: -8px;
     }
+
+    .ihablidades img{
+
+
+        display: inline-block;
+        max-width: 100px;
+        max-height: 100px;
+        margin-top: 30px;
+        margin-bottom: 15px;
+        cursor: pointer;
+        
+    }
     
+    .projetos h1{
+        margin-left: -180px;
+    }
     .container{
         width: 1000px;
         position: relative;
         display: flex;
         justify-content: space-around;
     }
-
-    .container .card .face.face1{
-        margin: 15px;
+    body { overflow-x: hidden; }
+    body::-webkit-scrollbar {
+        width: 12px;               /* width of the entire scrollbar */
     }
-
-    .container .card .face.face2{
-        margin: 15px;
-        top: -1px;
+    body::-webkit-scrollbar-track {
+        background: rgb(249, 249, 247);        /* color of the tracking area */
     }
-
+    body::-webkit-scrollbar-thumb {
+        background-color: #12d6e1;    /* color of the scroll thumb */
+        border-radius: 20px;       /* roundness of the scroll thumb */
+        border: 3px solid #12d6e1;  /* creates padding around scroll thumb */
+    }
     footer:hover {
         color:rgba(128, 255, 0, 0.785);
         
