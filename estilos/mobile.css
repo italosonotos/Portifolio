@@ -180,12 +180,14 @@ a {
     width: 300px;
     height: 200px;
     transition:  0.5s;
+    top: 19px;
+    right: 150px;
     border-radius: 5px;
 }
 
 .container .card .face.face1{
     position: relative;
-    background: #12d6e1;
+    background: #0b0b0b;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -198,12 +200,6 @@ a {
     transform: translateY(0);
 }
 
- /*.container .card .face.face1 .content{
-    opacity: 0.5;
-    transition: 0.5s;
-
-}
-*/
 .container .card:hover  .face.face1 .content{
     opacity: 1;
 }

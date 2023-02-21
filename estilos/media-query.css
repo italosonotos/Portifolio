@@ -116,6 +116,15 @@
         justify-content: space-around;
     }
 
+    .container .card .face.face1{
+        margin: 15px;
+    }
+
+    .container .card .face.face2{
+        margin: 15px;
+        top: -1px;
+    }
+
     footer:hover {
         color:rgba(128, 255, 0, 0.785);
         
