@@ -30,13 +30,9 @@ menu{
     display: none;
 }
 
-menu >h1{
-    list-style: none;
-}
-
 nav ul li {
     list-style: none;
-    margin: 10px -8s5px;
+    margin: 1px -8s5px;
 }
 
 menu > ul > li > a{
@@ -71,7 +67,7 @@ nav p { /*Logo IS*/
     padding-top: 15px;
     position: relative;
     width: 20%;
-    height: 55px;
+    height: 60px;
     border: 5px solid #12d6e1;
     border-radius: 105px;
     text-decoration: none;
@@ -85,9 +81,9 @@ nav p { /*Logo IS*/
     position: relative;
     margin-top: -75px;
     left: 120px;
-    padding-top: 15px;
+    padding-top: 19px;
     width: 20%;
-    height: 55px;
+    height: 60px;
     border: 5px solid #12d6e1;
     border-radius: 105px;
 
@@ -177,6 +173,13 @@ a {
 .container .card{
     position: relative;
     cursor: pointer;
+    margin: 20px;
+}
+
+#geSenha, 
+#calcImc, 
+#cardVazio{
+    margin-left: 2px;
 }
 
 .container .card .face{
