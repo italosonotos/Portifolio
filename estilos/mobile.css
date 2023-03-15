@@ -45,6 +45,11 @@ menu > ul > li > a {
   text-decoration: none;
   color: white;
   border-radius: 10px;
+  margin-left: -80px;
+}
+
+menu > ul > li > a#habi{
+  margin-top: -1px;
 }
 
 i#burguer {
@@ -66,44 +71,35 @@ nav p {
 
 .linkedin a {
   display: flex;
-  text-align: center;
-  font-size: 1em;
   padding-top: 15px;
   padding: 5px 20px;
   position: relative;
   width: 20%;
   height: 60px;
-  border: 5px solid #12d6e1;
-  border-radius: 105px;
-  text-decoration: none;
 }
 
 .github a {
   display: flex;
-  text-align: center;
-  font-size: 1em;
   position: relative;
   margin-top: -75px;
-  left: 120px;
+  left: 110px;
   padding: 5px 20px;
   padding-top: 19px;
   width: 20%;
   height: 60px;
-  border: 5px solid #12d6e1;
-  border-radius: 105px;
 }
 
 .imglinkd {
-  max-width: 15px;
-  max-height: 25px;
+  max-width: 100px;
+  max-height: 100px;
   margin-right: 5px;
   width: auto;
   height: auto;
 }
 
 .imggit {
-  max-width: 20px;
-  max-height: 20px;
+  max-width: 100px;
+  max-height: 100px;
   margin-right: 5px;
   width: auto;
   height: auto;
