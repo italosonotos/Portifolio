@@ -1,276 +1,271 @@
 @charset "UTF-8";
 
-*{
-    margin: 0;
-    border: 0;
-    background-color: #121212;
-    color: rgb(255, 250, 250);
-    font-family: "Inter", sans-serif;
-    letter-spacing: 1px;
+* {
+  margin: 0;
+  border: 0;
+  background-color: #121212;
+  color: rgb(255, 250, 250);
+  font-family: "Inter", sans-serif;
+  letter-spacing: 1px;
+}
+html,
+body {
+  width: 100vw;
+  height: 100%;
+}
+header {
+  padding: 10px;
+  width: 100%;
+  z-index: 100;
 }
 
-header{
-    padding: 10px;
-    width: 100%;
-    z-index: 100;
+img#ghost {
+  display: none;
 }
 
-img#ghost{
-    display: none;
+img#perfil {
+  border-radius: 550px;
+  width: 300px;
+  height: 300px;
+  object-fit: fill;
 }
 
-img#perfil{
-    border-radius: 550px;
-    width: 300px;
-    height: 300px;
-    object-fit: fill;
-}
-
-menu{
-    display: none;
+menu {
+  display: none;
 }
 
 nav ul li {
-    list-style: none;
-    margin: 1px -8s5px;
+  list-style: none;
+  margin: 1px -8s5px;
 }
 
-menu > ul > li > a{
-    
-    display: flex;
-    padding: 5px;
-    text-decoration: none;
-    color: white;
-    border-radius: 10px;   
+menu > ul > li > a {
+  display: grid;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  border-radius: 10px;
+  margin-left: -80px;
 }
 
-i#burguer{
-    background-color: rgb(80, 80, 80);
-    color: white;
-    display: block;
-    text-align: center;
-    padding: 10px;
-    cursor: pointer;
+i#burguer {
+  background-color: rgb(80, 80, 80);
+  color: white;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  cursor: pointer;
 }
 
-nav p { /*Logo IS*/
-    padding: -10px;
-    font-size: 1.8rem;
-    width: 100%;
-    color: #12d6e1;
+nav p {
+  /*Logo IS*/
+  padding: -10px;
+  font-size: 1.8rem;
+  width: 100%;
+  color: #12d6e1;
 }
 
-.linkedin a{
-    display: block;
-    text-align: center;
-    font-size: 1em;
-    padding-top: 15px;
-    position: relative;
-    width: 20%;
-    height: 60px;
-    border: 5px solid #12d6e1;
-    border-radius: 105px;
-    text-decoration: none;
-
+.linkedin a {
+  display: flex;
+  padding-top: 15px;
+  padding: 5px 20px;
+  position: relative;
+  width: 20%;
+  height: 60px;
 }
 
-.github a{
-    display: block;
-    text-align: center;
-    font-size: 1em;
-    position: relative;
-    margin-top: -75px;
-    left: 120px;
-    padding-top: 19px;
-    width: 20%;
-    height: 60px;
-    border: 5px solid #12d6e1;
-    border-radius: 105px;
-
+.github a {
+  display: flex;
+  position: relative;
+  margin-top: -75px;
+  left: 120px;
+  padding: 5px 20px;
+  padding-top: 19px;
+  width: 20%;
+  height: 60px;
 }
 
 .imglinkd {
-    max-width:15px;
-    max-height:25px;
-    width: auto;
-    height: auto;
-    
+  max-width: 100px;
+  max-height: 100px;
+  margin-right: 5px;
+  width: auto;
+  height: auto;
 }
 
 .imggit {
-    max-width:20px;
-    max-height:20px;
-    width: auto;
-    height: auto;
-    align-items: center;
+  max-width: 80px;
+  max-height: 80px;
+  margin-right: 5px;
+  margin-top: -10px;
+  width: auto;
+  height: auto;
+  align-items: center;
+}
+.ihablidades {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
-.ihablidades img{
-
-
-    display: flex;
-    max-width: 100px;
-    max-height: 100px;
-    margin-top: 30px;
-    margin-bottom: 15px;
-    
+.ihablidades img {
+  display: flex;
+  max-width: 100px;
+  max-height: 100px;
+  margin-top: 30px;
+  margin-bottom: 15px;
 }
 
 h1,
 h2,
 p {
-margin: 0;
+  margin: 0;
 }
 
 h1 {
-    text-transform: uppercase;
-}
-  
-h2 {
-    font-size: 1rem;
+  text-transform: uppercase;
 }
 
-h1#inome{
-    color: #12d6e1;
+h2 {
+  font-size: 1rem;
+}
+
+h1#inome {
+  color: #12d6e1;
 }
 
 h1 {
-    text-transform: uppercase;
+  text-align: center;
 }
-  
+
 h2 {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 .principal,
 .sobre-mim,
-.Habilidade,
-.projetos
-{
+.Habilidade {
   padding: 6.5% 15%;
   min-height: 35vh;
 }
-
+.principal h1{
+    display: flex;
+    justify-content: flex-start;
+}
+.projetos .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
 section h1 {
-    margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
 
 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
+}
+.container .card {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
-.container{
-    
-    width: 1000px;
-    position: relative;
-    margin-left: 150px;
-    display: block;
-    justify-content: space-between;
-}
-.projetos h1{
-    margin-left: -150px;
-}
-.container .card{
-    position: relative;
-    cursor: pointer;
-    margin: 20px;
+#geSenha,
+#calcImc,
+#cardVazio {
+  margin-left: 2px;
 }
 
-#geSenha, 
-#calcImc, 
-#cardVazio{
-    margin-left: 2px;
+.container .card .face {
+  width: 300px;
+  height: 200px;
+  transition: 0.5s;
+  top: 19px;
+  right: 150px;
+  border-radius: 5px;
 }
 
-.container .card .face{
-    width: 300px;
-    height: 200px;
-    transition:  0.5s;
-    top: 19px;
-    right: 150px;
-    border-radius: 5px;
+.container .card .face.face1 {
+  background: #0b0b0b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transform: translateY(100px);
 }
 
-.container .card .face.face1{
-    position: relative;
-    background: #0b0b0b;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    transform: translateY(100px);
+.container .card:hover .face.face1 {
+  background-color: #000000;
+  transform: translateY(0);
 }
 
-.container .card:hover .face.face1{
-    background-color: #000000;
-    transform: translateY(0);
+.container .card:hover .face.face1 .content {
+  opacity: 1;
 }
 
-.container .card:hover  .face.face1 .content{
-    opacity: 1;
+.container .card .face.face1 .content img {
+  width: 300px;
+  height: 200px;
 }
 
-.container .card .face.face1 .content img{
-    width: 300px;
-    height: 200px;
+.container .card .face.face1 .content h3 {
+  margin: 10px 0 0;
+  color: white;
+  text-align: center;
+  font-size: 1.5em;
 }
 
-.container .card .face.face1 .content h3{
-    margin: 10px 0 0;
-    color: white;
-    text-align: center;
-    font-size: 1.5em;
+.container .card .face.face2 {
+  background-color: #00000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
+  transform: translateY(-100px);
 }
 
-.container .card .face.face2{
-    position: relative;
-    background-color: #00000000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 1px;
-    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
-    transform: translateY(-100px);
+.container .card:hover .face.face2 {
+  transform: translateY(0px);
 }
 
-.container .card:hover .face.face2{
-    transform: translateY(0px);
+.container .card:hover .face.face2 .content a {
+  margin: 15px 0 0;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 900;
+  color: #ffffff;
+  padding: 5px;
+  border: 1px solid #00000000;
+  transition: 0.4s;
 }
 
-.container .card:hover .face.face2 .content a{
-    margin: 15px 0 0;
-    display: inline-block;
-    text-decoration: none;
-    font-weight: 900;
-    color: #ffffff;
-    padding: 5px;
-    border: 1px solid #00000000;
-    transition: 0.4s;
+.container .card:hover .face.face2 .content a:hover {
+  border-radius: 10px;
+  background: #12d6e1;
+  color: white;
 }
 
-.container .card:hover .face.face2 .content a:hover{
-    border-radius: 10px;
-    background: #12d6e1;
-    color: white;
+.container .content p {
+  background-color: #00000000;
 }
 
-.container .content p{
-    background-color: #00000000;
-}
-
-.container .content a{
-    background-color: #00000000;
+.container .content a {
+  background-color: #00000000;
 }
 
 footer {
-    padding: 2rem 0;
-    text-align: center;
-    color: #12d6e1;
-    font-weight: bold;
-    transition: .4s;
+  width: 100%;
+  padding: 2rem 0;
+  text-align: center;
+  color: #12d6e1;
+  font-weight: bold;
+  transition: 0.4s;
 }
 
 footer p {
-    display: inline-block;
+  display: inline-block;
 }
-
