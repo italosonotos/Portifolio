@@ -132,15 +132,15 @@
     }
     body { overflow-x: hidden; }
     body::-webkit-scrollbar {
-        width: 12px;               /* width of the entire scrollbar */
+        width: 12px;              
     }
     body::-webkit-scrollbar-track {
-        background: rgb(249, 249, 247);        /* color of the tracking area */
+        background: rgb(249, 249, 247);        
     }
     body::-webkit-scrollbar-thumb {
-        background-color: #12d6e1;    /* color of the scroll thumb */
-        border-radius: 20px;       /* roundness of the scroll thumb */
-        border: 3px solid #12d6e1;  /* creates padding around scroll thumb */
+        background-color: #12d6e1;   
+        border-radius: 20px;       
+        border: 3px solid #12d6e1;  
     }
     footer:hover {
         color:rgba(128, 255, 0, 0.785);
