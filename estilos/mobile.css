@@ -40,12 +40,11 @@ nav ul li {
 }
 
 menu > ul > li > a {
-  display: grid;
-  padding: 10px;
+  display: flex;
+  padding: 5px;
   text-decoration: none;
   color: white;
   border-radius: 10px;
-  margin-left: -80px;
 }
 
 i#burguer {
@@ -67,15 +66,22 @@ nav p {
 
 .linkedin a {
   display: flex;
+  text-align: center;
+  font-size: 1em;
   padding-top: 15px;
   padding: 5px 20px;
   position: relative;
   width: 20%;
   height: 60px;
+  border: 5px solid #12d6e1;
+  border-radius: 105px;
+  text-decoration: none;
 }
 
 .github a {
   display: flex;
+  text-align: center;
+  font-size: 1em;
   position: relative;
   margin-top: -75px;
   left: 120px;
@@ -83,21 +89,22 @@ nav p {
   padding-top: 19px;
   width: 20%;
   height: 60px;
+  border: 5px solid #12d6e1;
+  border-radius: 105px;
 }
 
 .imglinkd {
-  max-width: 100px;
-  max-height: 100px;
+  max-width: 15px;
+  max-height: 25px;
   margin-right: 5px;
   width: auto;
   height: auto;
 }
 
 .imggit {
-  max-width: 80px;
-  max-height: 80px;
+  max-width: 20px;
+  max-height: 20px;
   margin-right: 5px;
-  margin-top: -10px;
   width: auto;
   height: auto;
   align-items: center;

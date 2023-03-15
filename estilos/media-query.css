@@ -16,16 +16,11 @@
     font-size: 1em;
     padding: 5px 20px;
     position: relative;
-    margin-top: 60px;
     width: 10%;
     height: 35px;
+    border: 7px solid #12d6e1;
+    border-radius: 105px;
     text-decoration: none;
-  }
-
-  .imglinkd {
-    max-width: 100px;
-    max-height: 100px;
-    margin-top: 50px;
   }
 
   .github a {
@@ -34,17 +29,13 @@
     align-items: center;
     font-size: 1em;
     position: relative;
-    margin-top: 60px;
+    margin-top: -60px;
     left: 150px;
     padding: 5px 20px;
     width: 10%;
     height: 35px;
-  }
-
-  .imggit {
-    max-width: 100px;
-    max-height: 100px;
-    margin-top: -150px;
+    border: 7px solid #12d6e1;
+    border-radius: 105px;
   }
 
   img#ghost {
@@ -54,7 +45,6 @@
     top: 300px;
     width: 200px;
     animation: float 3s ease-in-out infinite;
-    cursor: pointer;
   }
 
   @keyframes float {
