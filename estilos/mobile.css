@@ -24,7 +24,7 @@ img#ghost {
 }
 
 img#perfil {
-  border-radius: 550px;
+  border-radius: 50% ;
   width: 300px;
   height: 300px;
   object-fit: fill;
@@ -69,42 +69,34 @@ nav p {
   color: #12d6e1;
 }
 
-.linkedin a {
-  display: flex;
-  padding-top: 15px;
-  padding: 5px 20px;
-  position: relative;
-  width: 20%;
-  height: 60px;
+.imagens{
+  margin-top: 30px;
+
 }
 
-.github a {
-  display: flex;
-  position: relative;
-  margin-top: -75px;
-  left: 110px;
-  padding: 5px 20px;
-  padding-top: 19px;
-  width: 20%;
-  height: 60px;
+.imagens img{
+  width: 70px;
+  margin: 10px;
 }
 
-.imglinkd {
-  max-width: 100px;
-  max-height: 100px;
-  margin-right: 5px;
-  width: auto;
-  height: auto;
+#linkdin{
+  transition: transform 1s;
+  transform: translateX(0) scale(0.5)
 }
 
-.imggit {
-  max-width: 100px;
-  max-height: 100px;
-  margin-right: 5px;
-  width: auto;
-  height: auto;
-  align-items: center;
+#github{
+  transition: transform 1s;
+  transform: translateX(0) scale(0.5)
 }
+
+#github:hover, #github:focus {
+  transform: translateX(10px) scale(1.2);
+}
+
+#linkdin:hover, #linkdin:focus {
+  transform: translateX(10px) scale(1.2);
+}
+
 .ihablidades {
   display: flex;
   align-items: center;
@@ -119,6 +111,29 @@ nav p {
   margin-top: 30px;
   margin-bottom: 15px;
 }
+
+.html, 
+.css, 
+.js, 
+.react, 
+.ts, 
+.git, 
+.sql{
+  transition: transform 1s;
+  transform: translateX(0) scale(0.5)
+}
+
+.html:hover, 
+.css:hover, 
+.js:hover, 
+.react:hover, 
+.ts:hover, 
+.git:hover, 
+.sql:hover{
+  transform: translateX(10px) scale(1.2);
+}
+
+
 
 h1,
 h2,

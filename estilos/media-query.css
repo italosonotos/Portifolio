@@ -6,7 +6,7 @@
   }
 
   nav p:hover {
-    color: rgba(128, 255, 0, 0.785);
+    color: #0c8d93;
     cursor: pointer;
   }
   
@@ -51,7 +51,7 @@
       transform: translatey(0);
     }
     50% {
-      transform: translateY(-50px);
+      transform: translatex(-50px);
     }
   }
 
@@ -147,6 +147,6 @@
   }
 
   footer:hover {
-    color: rgba(128, 255, 0, 0.785);
+    color: #0c8d93;
   }
 }
