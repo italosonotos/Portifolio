@@ -4,197 +4,469 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <meta name="description" content="Portfolio de Italo Santos - Desenvolvedor Full Stack em formação">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap">
     <link rel="shortcut icon" href="imagens/letra-i.png" type="image/x-icon">
-    <link rel="stylesheet" href="estilos/mobile.css">
-    <link rel="stylesheet" href="estilos/media-query.css">
-    <title>Portfolio </title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <title>Italo Santos | Full Stack Developer</title>
 </head>
 <body>
+    <!-- Header/Navegação -->
     <header>
         <nav class="menu">
             <div class="logo">
-                <p><a href="#home" class="logo"></a>IS</p>
+                <a href="#home">IS</a>
             </div>
-            <label class="burger" for="burger">
-                <input type="checkbox" id="burger" onclick="clickMenu()">
+            
+            <label class="burger" for="burger" aria-label="Menu">
+                <input type="checkbox" id="burger">
                 <span></span>
                 <span></span>
                 <span></span>
-              </label>
-                <menu id="lista">
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#sobre"> Sobre</a></li>
-                        <li><a href="#Habilidade" id="habi">Habilidades</a></li>
-                        <li><a href="#projetos" >Projetos</a></li>
-                    </ul>
-                </menu>
+            </label>
+            
+            <menu id="lista">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#experiencia">Experiência</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#projetos">Projetos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </menu>
         </nav>
     </header>
-    <section class="princial" id="home">
 
-        <div class="principal">
-            
-             <br>
-            <h1>Olá, eu sou</h1>
-            <h1 id="inome">Italo santos</h1>
-            <h1>Desenvolvedor Front-End</h1>
-            <div class="foto-sobre-mim">
-               <img src="imagens/foto-perfil.jpeg" alt="perfil" id="perfil">
-            </div>
-            <img src="imagens/imagem.png" alt="Ghost" id="ghost">
-            <br>    
-        </div>
-        
-    </section>
-    <section class="sobre-mim">
-
-        <div class="sobre-mim__descricao" id="sobre" >
-            <h1>Sobre mim</h1>
-            <br>
-            <br>
-            <br>
-            <br>
-            <br>
-            <h2>Aracaju, Segipe</h2>
-            <br>
-            <p>Meu nome é Italo Santos e sou apaixonado por tecnologia e coisas novas, Meu primeiro contato com a programação foi em 2022,quando eu tive minha primeira aula introdução a programação na faculdade. Apesar de ter gostado da área, eu só comecei a dar o devido foco quando eu decidir fazer uma transição de carreira.
-                Comecei estudando o desenvolvimento back end, mas o que realmente chamou minha atenção foi o desenvolvimento front end. 
-            </p> 
-
-            <div class="imagens">
-                <a href="https://www.linkedin.com/in/italo-santos-869427236/" target="_blank" rel="noopener noreferrer"><img src="imagens/linkedin.png" id="linkdin"></a>
-                <a href="https://github.com/italosonotos"  target="_blank" rel="noopener noreferrer"><img src="imagens/icon-git-hub.png"  id="github"></a>
-            </div>
- 
-            <div class="btn">
-                <a class="buttonDownload" href="curriculo/Cópia de curriculo italo  web.pdf" target="_blank">Curriculo</a>
-            </div>
-            
-
-    </section>
-
-    <section class="Habilidade" id="Habilidade" >
-        <div class="Habilidade-descrição" >
-            <h1>Habilidades</h1>
-            <div class="ihablidades">
-                <div class="html"><img src="imagens/html-5.png" alt="#"></div>
-                <div class="css"><img src="imagens/css.png" alt="#"></div>
-                <div class="js"><img src="imagens/script-java.png" alt="#"></div>
-                <div class="react"><img src="imagens/react.png" alt="#"></div>
-                <div class="ts"><img src="imagens/typscript.png" alt="#"></div>
-                <div class="git"><img src="imagens/icon-github.png" alt="#"></div>
-                <div class="sql"><img src="imagens/servidor-sql.png" alt="#"></div>
-            </div>
-            
-            
-    </section>
-    <section class="projetos" id="projetos">
-        
-        <div class="Projetos" >
-            <h1 class="title-projetos">Projetos</h1>
-            <div class="container">
-                
-                <div class="card">
-
-                   <div class="face face1">
-                        <div class="content">
-                            <img src="imagens/1.png" alt="">
-                            
-                        </div>
-                   </div>
-
-                   <div class="face face2">
-                        <div class="content">
-                            <p>Formulário de Login responsivo, Feito utilizando HTML,CSS e JAVASCRIPT
-                            </p>
-                            <a href="https://italosonotos.github.io/Formulario-Login/">Ver mais</a>
-                        </div>
-                   </div>
+    <main>
+        <!-- Seção Hero -->
+        <section class="hero" id="home">
+            <div class="hero__content">
+                <div class="hero__text">
+                    <span class="hero__greeting">👋 Olá, eu sou</span>
+                    <h1 class="hero__name">Italo Santos</h1>
+                    <h2 class="hero__title">Desenvolvedor Full Stack</h2>
+                    <p class="hero__subtitle">Transformando ideias em experiências digitais incríveis</p>
+                    
+                    <div class="hero__cta">
+                        <a href="#projetos" class="btn btn--primary">Ver Projetos</a>
+                        <a href="#contato" class="btn btn--secondary">Entrar em Contato</a>
+                    </div>
                 </div>
-                <div class="card" id="calc">
-
-                    <div class="face face1">
-                         <div class="content">
-                            <img src="imagens/Calculadora.png" alt="Calculadora">
-                         </div>
+                
+                <div class="hero__image">
+                    <div class="image-wrapper">
+                        <img src="imagens/foto-perfil.jpeg" alt="Foto de perfil de Italo Santos" loading="lazy">
+                        <div class="image-overlay"></div>
                     </div>
+                </div>
+                
+                <img src="imagens/imagem.png" alt="" class="hero__decoration" aria-hidden="true">
+            </div>
 
-                    <div class="face face2" id="div2">
-                         <div class="content">
-                             <p>
-                                Calculadora responsiva, feita Utilizando HTML,CSS e JavaScript. 
-                             </p>
-                             <a href="https://italosonotos.github.io/Calculadora/">Ver mais</a>
-                         </div>
-                    </div>
-                 </div>
-                 <div class="card" id="diconario">
+            <!-- Scroll indicator -->
+            <div class="scroll-indicator">
+                <span></span>
+            </div>
+        </section>
 
-                    <div class="face face1">
-                         <div class="content">
-                            <img src="imagens/Dicionario.png" alt="">
-                         </div>
+        <!-- Seção Sobre -->
+        <section class="about" id="sobre">
+            <div class="about__container">
+                <h2 class="section-title">Sobre mim</h2>
+                
+                <div class="about__content">
+                    <div class="about__info">
+                        <div class="info-card">
+                            <span class="info-card__icon">📍</span>
+                            <div>
+                                <h3>Localização</h3>
+                                <p>Aracaju, SE</p>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <span class="info-card__icon">🎓</span>
+                            <div>
+                                <h3>Formação</h3>
+                                <p>Análise e Desenvolvimento de Sistemas</p>
+                                <small>DESCOMPLICA - 2024-2026</small>
+                            </div>
+                        </div>
+                        
+                        <div class="info-card">
+                            <span class="info-card__icon">💼</span>
+                            <div>
+                                <h3>Experiência</h3>
+                                <p>Técnico de Suporte N2</p>
+                                <small>YO Telecom - 2023-Atual</small>
+                            </div>
+                        </div>
                     </div>
                     
-                    <div class="face face2" id="div2">
-                         <div class="content">
-                             <p>Dicionário de português usando uma api externa, junto com HTML,CSS e JavaScript.</p>
-                             <a href="https://italosonotos.github.io/Dicionario_De_Portugues/">Ver mais</a>
-                         </div>
-                    </div>                 
-                 
+                    <div class="about__description">
+                        <p>
+                            Profissional com experiência em atendimento ao cliente, vendas e suporte técnico, 
+                            atuando com sistemas como <strong>SGP</strong> e <strong>IXC</strong>. 
+                        </p>
+                        <p>
+                            Possuo conhecimentos em <strong>React, HTML, CSS, C#, MySQL, Git e GitHub</strong>, 
+                            em constante desenvolvimento para a carreira de <strong>Full Stack Developer</strong>. 
+                        </p>
+                        <p>
+                            Habilidade em comunicação, resolução de problemas e organização de processos, 
+                            sempre buscando eficiência e a melhor experiência para o usuário.
+                        </p>
+                        
+                        <div class="about__social">
+                            <a href="https://www.linkedin.com/in/italo-santos-869427236/" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               aria-label="LinkedIn"
+                               class="social-link">
+                                <img src="imagens/linkedin.png" alt="LinkedIn">
+                            </a>
+                            <a href="https://github.com/italosonotos" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               aria-label="GitHub"
+                               class="social-link">
+                                <img src="imagens/icon-git-hub.png" alt="GitHub">
+                            </a>
+                        </div>
+
+                        <div class="about__cta">
+                            <a class="btn-download" href="curriculo/Cópia de curriculo italo  web.pdf" target="_blank">
+                                Baixar Currículo
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="card" id="geSenha">
+        </section>
 
-                <div class="face face1">
-                     <div class="content">
-                        <img src="imagens/Gerador_de_senhas.png" alt="Gerador_de_senhas">
-                     </div>
-                </div>
+        <!-- Seção Experiência -->
+        <section class="experience" id="experiencia">
+            <div class="experience__container">
+                <h2 class="section-title">Experiência Profissional</h2>
                 
-                <div class="face face2" id="div2">
-                     <div class="content">
-                         <p>Gerador de senhas!</p>
-                         <a href="https://italosonotos.github.io/Gerador_de_senhas/">Ver mais</a>
-                     </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-date">2023 - Atual</span>
+                            <h3>Técnico de Suporte N2</h3>
+                            <h4>YO Telecom</h4>
+                            <ul>
+                                <li>Auxiliei clientes na solução de dúvidas e problemas técnicos</li>
+                                <li>Experiência com sistemas de gestão SGP, IXC e OPA SUITE</li>
+                                <li>Configuração e gestão de ativos (Roteadores)</li>
+                                <li>Desenvolvimento de habilidades em organização e atendimento ao cliente</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-             </div>
-            <div class="card" id="calcImc">
-                <div class="face face1">
-                     <div class="content">
-                        <img src="imagens/Calculadora-imc.png" alt="Calculadora_imc">
-                     </div>
-                </div>         
-                <div class="face face2" id="div2">
-                     <div class="content">
-                         <p>Calculadora De IMC</p>
-                         <a href="https://italosonotos.github.io/Calculando-IMC/">Ver mais</a>
-                     </div>
-                </div>
-             </div>
-            <div class="card" id="cardVazio">
-                <div class="face face1">
-                     <div class="content">
-                         <img src="imagens/Miniblog.png" alt="MiniBlog">
-                     </div>
-                </div>
-                <div class="face face2" id="div2">
-                     <div class="content">
-                         <p>Projeto MiniBlog feito com React junto com o FireBase. <br>
-                            O Ract remponsalvel pelo o front-end, e o Firebase pelo banck-end
-                         </p>
-                         <a href="https://mini-blog-amber.vercel.app/">Ver mais</a>
-                     </div>
-                </div>
-             </div>
-        </div>
-    </section>
-    
+            </div>
+        </section>
 
-</main>
-<footer><small>&copy;Site Desenvilvido Por Italo Santos</small></footer>
-<script src="scripts/script.js"></script>
+        <!-- Seção Habilidades -->
+        <section class="skills" id="habilidades">
+            <div class="skills__container">
+                <h2 class="section-title">Habilidades Técnicas</h2>
+                
+                <div class="skills__categories">
+                    <!-- Frontend -->
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="skills__grid">
+                            <div class="skill-item" data-skill="HTML5">
+                                <img src="imagens/html-5.png" alt="HTML5">
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-item" data-skill="CSS3">
+                                <img src="imagens/css.png" alt="CSS3">
+                                <span>CSS3</span>
+                            </div>
+                            <div class="skill-item" data-skill="JavaScript">
+                                <img src="imagens/script-java.png" alt="JavaScript">
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item" data-skill="React">
+                                <img src="imagens/react.png" alt="React">
+                                <span>React</span>
+                            </div>
+                            <div class="skill-item" data-skill="TypeScript">
+                                <img src="imagens/typscript.png" alt="TypeScript">
+                                <span>TypeScript</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend & Database -->
+                    <div class="skill-category">
+                        <h3>Backend & Database</h3>
+                        <div class="skills__grid">
+                            <div class="skill-item" data-skill="SQL">
+                                <img src="imagens/servidor-sql.png" alt="SQL">
+                                <span>SQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Ferramentas -->
+                    <div class="skill-category">
+                        <h3>Ferramentas & Outros</h3>
+                        <div class="skills__grid">
+                            <div class="skill-item" data-skill="Git/GitHub">
+                                <img src="imagens/icon-github.png" alt="Git/GitHub">
+                                <span>Git/GitHub</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="soft-skills">
+                    <h3>Competências Profissionais</h3>
+                    <div class="soft-skills__grid">
+                        <div class="soft-skill">
+                            <span class="soft-skill__icon">💬</span>
+                            <p>Comunicação</p>
+                        </div>
+                        <div class="soft-skill">
+                            <span class="soft-skill__icon">🔧</span>
+                            <p>Solução de Problemas</p>
+                        </div>
+                        <div class="soft-skill">
+                            <span class="soft-skill__icon">🎯</span>
+                            <p>Organização</p>
+                        </div>
+                        <div class="soft-skill">
+                            <span class="soft-skill__icon">👥</span>
+                            <p>Trabalho em Equipe</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Projetos -->
+        <section class="projects" id="projetos">
+            <div class="projects__container">
+                <h2 class="section-title">Projetos em Destaque</h2>
+                
+                <div class="projects__grid">
+                    <!-- Projeto 1 -->
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="imagens/1.png" alt="Formulário de Login">
+                            <div class="project-card__overlay">
+                                <a href="https://italosonotos.github.io/Formulario-Login/" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer"
+                                   class="btn btn--small">
+                                    Ver Projeto
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <h3>Formulário de Login</h3>
+                            <p>Formulário de Login responsivo com validação</p>
+                            <div class="project-card__tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 2 -->
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="imagens/Calculadora.png" alt="Calculadora">
+                            <div class="project-card__overlay">
+                                <a href="https://italosonotos.github.io/Calculadora/" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer"
+                                   class="btn btn--small">
+                                    Ver Projeto
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <h3>Calculadora</h3>
+                            <p>Calculadora responsiva com operações básicas</p>
+                            <div class="project-card__tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 3 -->
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="imagens/Dicionario.png" alt="Dicionário de Português">
+                            <div class="project-card__overlay">
+                                <a href="https://italosonotos.github.io/Dicionario_De_Portugues/" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer"
+                                   class="btn btn--small">
+                                    Ver Projeto
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <h3>Dicionário de Português</h3>
+                            <p>Dicionário com integração de API externa</p>
+                            <div class="project-card__tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                                <span>API</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 4 -->
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="imagens/Gerador_de_senhas.png" alt="Gerador de Senhas">
+                            <div class="project-card__overlay">
+                                <a href="https://italosonotos.github.io/Gerador_de_senhas/" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer"
+                                   class="btn btn--small">
+                                    Ver Projeto
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <h3>Gerador de Senhas</h3>
+                            <p>Gerador de senhas seguras personalizáveis</p>
+                            <div class="project-card__tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 5 -->
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="imagens/Calculadora-imc.png" alt="Calculadora de IMC">
+                            <div class="project-card__overlay">
+                                <a href="https://italosonotos.github.io/Calculando-IMC/" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer"
+                                   class="btn btn--small">
+                                    Ver Projeto
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <h3>Calculadora de IMC</h3>
+                            <p>Calculadora de IMC com classificação</p>
+                            <div class="project-card__tags">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>JavaScript</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <!-- Projeto 6 -->
+                    <article class="project-card">
+                        <div class="project-card__image">
+                            <img src="imagens/Miniblog.png" alt="MiniBlog">
+                            <div class="project-card__overlay">
+                                <a href="https://mini-blog-amber.vercel.app/" 
+                                   target="_blank" 
+                                   rel="noopener noreferrer"
+                                   class="btn btn--small">
+                                    Ver Projeto
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-card__content">
+                            <h3>MiniBlog</h3>
+                            <p>Blog completo com autenticação e CRUD</p>
+                            <div class="project-card__tags">
+                                <span>React</span>
+                                <span>Firebase</span>
+                                <span>CSS</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section class="contact" id="contato">
+            <div class="contact__container">
+                <h2 class="section-title">Vamos Trabalhar Juntos?</h2>
+                
+                <div class="contact__content">
+                    <div class="contact__info">
+                        <div class="contact-item">
+                            <span class="contact-item__icon">📧</span>
+                            <div>
+                                <h3>Email</h3>
+                                <a href="mailto:italosdj@icloud.com">italosdj@icloud.com</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <span class="contact-item__icon">📱</span>
+                            <div>
+                                <h3>Telefone</h3>
+                                <a href="tel:+5579998845898">(79) 99884-5898</a>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <span class="contact-item__icon">📍</span>
+                            <div>
+                                <h3>Localização</h3>
+                                <p>Aracaju, SE - Brasil</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact__social">
+                        <h3>Redes Sociais</h3>
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/italo-santos-869427236/" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="social-link-large">
+                                <img src="imagens/linkedin.png" alt="LinkedIn">
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/italosonotos" 
+                               target="_blank" 
+                               rel="noopener noreferrer"
+                               class="social-link-large">
+                                <img src="imagens/icon-git-hub.png" alt="GitHub">
+                                <span>GitHub</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer__content">
+            <p>&copy; 2024 Italo Santos. Desenvolvido com ❤️ e muito ☕</p>
+            <p>Todos os direitos reservados</p>
+        </div>
+    </footer>
+
+    <script src="scripts/script.js"></script>
 </body>
 </html>
